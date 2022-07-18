@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">  
+        <title>css2</title>
+        <!-- 引入外部CSS檔案 -->
+        <link rel="stylesheet" href="style.css">    <!-- link只能寫在head裡面，rel="stylesheet"是指引入css的檔案，href：寫入檔案位置-->
+    </head>
+
+    <body>
+       
+        <!-- opacity(透明度：0~1) & border-radius(圓角率(R角))：左上 右上 右下 左下 -->
+        <h1>CSS教學3</h1>
+        <p style="position:relative; top: 65px; left: 25px; ">透明度：0.2</p>
+        <div style="opacity:0.2; border-radius: 10px 20px 30px 40px; width:80px; height: 80px; background-color:blue "></div>
+        <p>範例文字</p>
+
+        <h1 id="title1" class="background-color">Class & ID</h1>
+        <h1 id="title"> 123456</h1>
+        <p class="food background-color">肋眼牛排</p>
+        <p id="checken" class="food">香煎雞排</p>
+        <p class="food">珍奶微微</p>
+        <p class="person background-color">劉備</p>
+        <p class="person"><b>關羽</b></p>
+        <p class="person">張飛</p>
+        
+        <!-- 更多套用css的方法 -->
+        <ul>
+            <li><a href="https//:google.com">google</a></li>
+            <li>facebook</li>
+            <li>ig</li>
+        </ul>
+        <input type="text"/>
+        <br/>
+        <input type="password"/>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <!-- flex(權重，寫在在style中，並且要寫在最外層，此例要寫在container) -->
+        <div class="container">
+            <div class="box-1">區塊1</div>
+            <div class="box-2">區塊2</div>
+            <div class="box-3">區塊3</div>
+            <div class="box-1">區塊1</div>
+            <div class="box-2">區塊2</div>
+            <div class="box-3">區塊3</div>
+            <div class="box-1">區塊1</div>
+            <div class="box-2">區塊2</div>
+            <div class="box-3">區塊3</div>
+        </div>
+
+        <!-- animation(動畫) -->
+        <h1>animation</h1>
+        <div class="外框">
+            <div class="box box-animation"></div>
+        </div>
+        
+    </body>
+
+    <style> /*可對body內整體的標籤做樣式的編輯，但body內如已經有的話會以body內的為主，外部引入的為最後順位*/
+        
+        /* p{
+            color:rgb(233, 135, 7); 
+            background-color: blueviolet;
+        }
+        h1{
+            color:rgb(129, 119, 233);
+        } */
+        
+    </style>
+</html>
